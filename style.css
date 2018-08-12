@@ -1,6 +1,7 @@
 body{
-  font-size: 16px;
-  background: #ffffff;
-  color: #000000;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  background: red;
+  color: yellow;
   text-align: left;
 }
