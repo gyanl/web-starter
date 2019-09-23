@@ -1,0 +1,99 @@
+@font-face {
+  font-family: google;
+  src: url(GoogleSans-Regular.ttf);
+  }
+  h1{
+    font-family: DM serif Display;
+    font-size: 52pt;
+    font-weight: 400;
+    color: white;
+    Margin: 4% 10% 0% 10%;
+  }
+  h3{
+    color: #9EADCA;
+    font-size: 18pt;
+    font-weight: 400;
+    margin: 2% 10% 0% 10%;
+    font-family: Roboto Mono;
+    line-height:32pt;
+  }
+  p{
+    color: #9EADCA;
+    font-size: 18pt;
+    margin: 2% 10% 0% 10%;
+    font-family: Roboto Mono;
+    line-height:32pt;
+  }
+
+  @keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+  .wrapper{
+    display: grid;
+    width: 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2% 10% 0% 10%;
+  }
+  .wrapper img{
+    width: 48px;
+    height: 48px;
+  }
+  button{
+    padding: 1% 2% 1% 2%;
+    margin: 2% 2% 0% 10%;
+    background-color: #592CCB;
+    font-size: 12pt;
+    font-family: Roboto Mono;
+    color: #ffffff;
+    border-radius: 8px;
+    border:0px;
+  }
+  ul{
+    color: #9EADCA;
+    font-size: 18pt;
+    margin: 2% 10% 0% 10%;
+    font-family: google;
+    line-height:32pt;
+  }
+  ul li a{
+    color: #9EADCA;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  #imgbox{
+    position: absolute;
+    width: 40%;
+    height: 79%;
+    right: 5%;
+    top: 10%;
+    border-radius:8px;
+  }
+  

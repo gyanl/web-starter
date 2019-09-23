@@ -1,0 +1,85 @@
+@font-face {
+  font-family: google;
+  src: url(GoogleSans-Regular.ttf);
+  }
+  h1{
+    font-family: DM serif Display;
+    font-size: 52pt;
+    font-weight: 400;
+    color: white;
+    Margin: 3% 10% 0% 10%;
+  }
+  h3{
+    color: #9EADCA;
+    font-size: 18pt;
+    font-weight: 400;
+    margin: 0% 10% 2% 10%;
+    font-family: Roboto Mono;
+    line-height:32pt;
+  }
+  hr{
+    width: 5%;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  @keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; position: absolute; top:25%; }
+      to   { opacity: 1; position: absolute; top:0%; }
+  }
+  button{
+    padding: 1% 2% 1% 2%;
+    background-color: #592CCB;
+    font-size: 12pt;
+    font-family: Roboto Mono;
+    color: #ffffff;
+    border-radius: 8px;
+    border:0px;
+    position: fixed;
+    left: 6%;
+    top: 0%;
+  }
+  p{
+    margin: 2% 25% 5% 25%;
+    font-family: google;
+    font-size: 14pt;
+    color: #9EADCA;
+    line-height: 24pt;
+    text-align: left;
+    text-align: justify;
+  }
+  img{
+    width: 100%;
+  }
+  ul{
+    margin: -3% 25% 0% 25%;
+    font-family: google;
+    font-size: 14pt;
+    color: #9EADCA;
+    line-height: 24pt;
+    text-align: left;
+    text-align: justify;
+  }
