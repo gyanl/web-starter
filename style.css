@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
 html{
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 body{
-  font-family: "Inter";
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   background: #E0E7FF;
   color: #51557D;
@@ -16,42 +19,43 @@ a{
 }
 
 h1{
-  font-family: "Georgia";
+  font-family: "Merriweather", serif;
+  font-weight: 900;
   color: #1D1F50;
   margin-top: 1em;
   margin-bottom: 0;
 }
 
 h2{
-  font-family: "Georgia";
+  font-family: "Merriweather", serif;
   color: #1D1F50;
   margin-top: 1em;
   margin-bottom: 0;
 }
 
 h3{
-  font-family: "Georgia";
+  font-family: "Merriweather", serif;
   color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
 h4{
-  font-family: "Georgia";
+  font-family: "Merriweather", serif;
   color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
 h5{
-  font-family: "Georgia";
+  font-family: "Merriweather", serif;
   color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
 h6{
-  font-family: "Georgia";
+  font-family: "Merriweather", serif;
   color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
@@ -64,13 +68,21 @@ p{
 
 header{
   max-width: 750px;
-  background: #fff;
   font-size: 125%;
   font-weight: 800;
-  text-align: center;
   border-radius: 0px 0px 8px 8px;
   padding: 20px 40px 20px 10px;
   margin: auto;
+}
+
+.header-text{
+   text-align: left;
+   margin-left: 42px;
+   color: #1D1F50;
+   border-bottom: 4px solid #1D1F50;
+   padding-bottom: 8px;
+   padding-left: 2px;
+   padding-right: 2px;
 }
 
 svg.feather{
@@ -92,20 +104,32 @@ svg.feather{
 
 .blog-container img{
   max-width: 700px;
+  border-radius: 4px;
+  margin-bottom: -12px;
+  margin-top: 20px;
+}
+
+.image-caption{
+  font-style: italic;
+  opacity: .6;
+  padding-top: 24px;
+  padding-bottom: 20px;
 }
 
 .photo-author{
-  width: 56px;
-  height: 56px;
-  border-radius: 60px;
+  width: 48px;
+  height: 48px;
+  border-radius: 60px !important;
   display: inline;
   float: left;
-  margin-right: 12px;
+  margin-right: 12px !important;
+  margin-top: -2px !important;
 }
 
 .author-block{
-  margin-top: 24px;
-  line-height: 1.7;
+  margin-top: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .date{
@@ -186,15 +210,21 @@ body{
    background-color: #fff;
   }
 
+.header-text{
+  margin-left: 0px;
+}
+
 header{
-text-align: center;
+text-align: left;
+margin-left: 8px;
  border-radius: 0px;
 }
 
-.header-text{
-   color: #1D1F50;
-   border-bottom: 4px solid #1D1F50;
-   padding: 12px;
+.author-block{
+  margin-top: 20px;
+  line-height: 1.4;
+  font-size: 90%;
+  margin-bottom: 20px;
 }
 
 .blog-container{
