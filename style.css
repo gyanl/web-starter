@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
-html{
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
+/* General type rules */
 
 body{
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   background: #E0E7FF;
   color: #51557D;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
   margin: 0;
 }
 
@@ -18,45 +17,41 @@ a{
   text-decoration: none;
 }
 
-h1{
+
+/* Rules for headings */
+
+h1, h2, h3, h4, h5, h6{
   font-family: "Merriweather", serif;
-  font-weight: 900;
   color: #1D1F50;
+  }
+
+h1{
+  font-weight: 900;
   margin-top: 1em;
   margin-bottom: 0;
 }
 
 h2{
-  font-family: "Merriweather", serif;
-  color: #1D1F50;
   margin-top: 1em;
   margin-bottom: 0;
 }
 
 h3{
-  font-family: "Merriweather", serif;
-  color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
 h4{
-  font-family: "Merriweather", serif;
-  color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
 h5{
-  font-family: "Merriweather", serif;
-  color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
 h6{
-  font-family: "Merriweather", serif;
-  color: #1D1F50;
   margin-top: 1em;
   margin-bottom: .25em;
 }
@@ -66,6 +61,11 @@ p{
   margin-bottom: .75em;
 }
 
+
+
+
+/* Page header */
+
 header{
   max-width: 750px;
   font-size: 125%;
@@ -74,6 +74,10 @@ header{
   padding: 20px 40px 20px 10px;
   margin: auto;
 }
+
+
+
+/* The text in the header */
 
 .header-text{
    text-align: left;
@@ -85,10 +89,9 @@ header{
    padding-right: 2px;
 }
 
-svg.feather{
-  vertical-align: middle;
-  margin-bottom: 3px;
-}
+
+
+/* Main content area */
 
 .blog-container{
   max-width: 700px;
@@ -101,6 +104,10 @@ svg.feather{
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+
+
+/* Images in main content area */
 
 .blog-container img{
   max-width: 700px;
@@ -116,6 +123,16 @@ svg.feather{
   padding-bottom: 20px;
 }
 
+
+
+/* Author block in the blog */
+
+.author-block{
+  margin-top: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 .photo-author{
   width: 48px;
   height: 48px;
@@ -126,16 +143,13 @@ svg.feather{
   margin-top: -2px !important;
 }
 
-.author-block{
-  margin-top: 20px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
 .date{
   display: inline;
   opacity: .6;
 }
+
+
+/* Footer */
 
 footer{
   text-align: center;
@@ -148,11 +162,27 @@ footer{
   border-radius: 8px 8px 0px 0px;
 }
 
+
+
+/* Heart animation in footer */
+
 .heart{
   color: #ff4343;
 animation-name: color;
 animation-duration: 1s;
 animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    color: #FF4343;
+  }
+  50% {
+    color: #ee5E43;
+  }
+  100 {
+    color: #FF4343;
+  }
 }
 
 .social-link{
@@ -163,17 +193,9 @@ animation-iteration-count: infinite;
   color: #ee5E43;
 }
 
-@keyframes color {
-0% {
-  color: #FF4343;
-}
-50% {
-  color: #ee5E43;
-}
-100 {
-  color: #FF4343;
-}
-}
+
+
+/* Some extra stuff */
 
 .text-center{
     text-align: center;
@@ -204,43 +226,48 @@ animation-iteration-count: infinite;
   padding-left: 12px;
 }
 
-@media only screen and (max-width: 600px) {
 
-body{
-   background-color: #fff;
+
+
+/* Anything below this only applies to mobile */
+
+@media only screen and (max-width: 600px){
+
+  body{
+     background-color: #fff;
   }
 
-.header-text{
-  margin-left: 0px;
-}
+  .header-text{
+    margin-left: 0px;
+  }
 
-header{
-text-align: left;
-margin-left: 8px;
- border-radius: 0px;
-}
+  header{
+    text-align: left;
+    margin-left: 8px;
+    border-radius: 0px;
+  }
 
-.author-block{
-  margin-top: 20px;
-  line-height: 1.4;
-  font-size: 90%;
-  margin-bottom: 20px;
-}
+  .author-block{
+    margin-top: 20px;
+    line-height: 1.4;
+    font-size: 90%;
+    margin-bottom: 20px;
+  }
 
-.blog-container{
-  padding: 0px 5% 50px 5%;
-  border-radius: 0px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
+  .blog-container{
+    padding: 0px 5% 50px 5%;
+    border-radius: 0px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
 
-.blog-container img{
-  max-width: 100%;
-}
+  .blog-container img{
+    max-width: 100%;
+  }
 
-footer{
-  border-radius: 0px;
-  background: #E0E7FF;
-}
+  footer{
+    border-radius: 0px;
+    background: #E0E7FF;
+  }
 
 }
