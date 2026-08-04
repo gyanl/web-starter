@@ -1,80 +1,54 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-<title>Hello World</title>
-<link rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="scripts.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The title shows up in the browser tab -->
+  <title>My Website</title>
 
-<meta property="og:url"                content="http://gyanl.com/" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="My place on the internet." />
-<meta property="og:description"        content="Good design is as little design as possible." />
-<meta property="og:image"              content="https://gyanl.com/web-starter/og-image.png" />
+  <!-- These two lines connect your CSS and JavaScript files -->
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
 
+  <!-- This makes the page look right on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <a href="/" class="header-text">Gyan's Blog</a>
+  <header>
+    <a href="index.html" class="header-text">My Website</a>
   </header>
 
+  <main>
 
-<div class="blog-container">
+    <h1>Hi, I'm [Your Name] 👋</h1>
+    <p>Welcome to my website. I made it myself, starting from the web-starter kit.</p>
 
-  <b class="color-accent">about me</b>
-  <hr>
+    <h2>About me</h2>
+    <p>Write a few lines about yourself here. Who are you? What do you like making?</p>
 
-  <p>Hi! My name is Gyan. I study Design at IDC School of Design, IIT Bombay. This is my blog.</p>
+    <h2>Things I like</h2>
+    <!-- This is a list. Each <li> is one item. -->
+    <ul>
+      <li>Replace this with something you like</li>
+      <li>And this</li>
+      <li>This too</li>
+    </ul>
 
+    <h2>An article I wrote</h2>
+    <!-- This link goes to the other page in this folder -->
+    <p><a href="article.html">Read my first article →</a></p>
 
+  </main>
 
-  <b class="color-accent">projects</b>
-  <hr>
+  <footer>
+    <!-- Change this link to your own profile -->
+    <a href="https://github.com">My GitHub</a>
+    <br>
+    Made with <span class="heart">&hearts;</span> by me
+  </footer>
 
-  <img src="type.png">
-  <h2><a href="typography.html">Typography in HTML</a></h2>
-  <span class="date">27 January 2020</span>
-  <p>Stuff about using type in HTML</p>
-
-<hr>
-
-  <img src="landing.png">
-  <h2><a href="article.html">Another article</a></h2>
-  <span class="date">27 January 2020</span>
-  <p>This one is just a placeholder.</p>
-
-</div>
-
-
-<footer class="site-footer">
-  <a class="social-link" href="https://www.facebook.com/gyanlakhwani">
-    Facebook
-  </a>
-   •
-  <a class="social-link" href="https://twitter.com/gyanl">
-    Twitter
-  </a>
-   •
-  <a class="social-link" href="https://www.instagram.com/gyanl/">
-    Instagram
-  </a>
-   •
-  <a class="social-link" href="https://www.linkedin.com/in/gyanlakhwani">
-    LinkedIn
-  </a>
-   •
-  <a class="social-link" href="https://github.com/gyanl">
-    Github
-  </a>
-  <br>
-     Made with
-     <span class="heart">&hearts;</span>
-     in New Delhi
-  </div>
-
-</footer>
 </body>
+
 </html>
